@@ -1,0 +1,19 @@
+name: cs6613-project
+services:
+    pytorch-notebook:
+        stdin_open: true
+        tty: true
+        deploy:
+            resources:
+                reservations:
+                    devices:
+                        - driver: nvidia
+                          count: all
+                          capabilities:
+                              - gpu
+        ports:
+            - 8888:8888
+        environment:
+            - JUPYTER_TOKEN=passwd
+        build:
+            dockerfile: Dockerfile
