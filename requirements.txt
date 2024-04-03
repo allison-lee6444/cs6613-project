@@ -2,3 +2,4 @@ leafmap
 segment-geospatial
 localtileserver
 xarray
+GDAL
