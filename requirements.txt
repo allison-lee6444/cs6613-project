@@ -3,3 +3,7 @@ segment-geospatial
 localtileserver
 xarray
 GDAL
+numpy
+matplotlib
+tifffile
+scipy

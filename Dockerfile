@@ -7,7 +7,8 @@ WORKDIR /app
 VOLUME /app
 
 COPY requirements.txt /app
-COPY SAM_Fintuning_for_Remote_Sensing.ipynb /app
+COPY Milestones1_2.ipynb /app
+COPY Milestone3_Finetuning_sidewalks.ipynb /app
 
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=US/NewYork
