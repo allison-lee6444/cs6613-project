@@ -7,3 +7,10 @@ numpy
 matplotlib
 tifffile
 scipy
+transformers
+pillow
+opencv-python
+shapely
+centerline
+geopandas
+rasterio
