@@ -1,7 +1,6 @@
 FROM tverous/pytorch-notebook:latest
 USER root
 
-RUN rm -rf /app
 RUN cd /app
 WORKDIR /app
 VOLUME /app
@@ -10,10 +9,7 @@ COPY requirements.txt /app
 COPY Milestones1_2.ipynb /app
 COPY Milestone3_Finetuning_sidewalks.ipynb /app
 COPY Milestone5.ipynb /app
-COPY Label /app
-COPY Test /app
-COPY Train /app
-
+COPY sam-base-sidewalk.pth /app
 
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=US/NewYork

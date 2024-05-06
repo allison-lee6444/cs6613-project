@@ -17,3 +17,7 @@ services:
             - JUPYTER_TOKEN=passwd
         build:
             dockerfile: Dockerfile
+        volumes:
+            - ./Label:/app/Label
+            - ./Test:/app/Test
+            - ./Train:/app/Train
